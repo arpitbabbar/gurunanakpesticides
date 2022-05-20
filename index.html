@@ -61,7 +61,7 @@
       Sec -1 (Carousel)
     </section>
     <section>
-      <div class="swiper container">
+      <div class="swiper">
         <div class="swiper-wrapper content">
           <div class="swiper-slide card">
             <div class="image">
@@ -158,9 +158,9 @@
     <script>
       const swiper = new Swiper('.swiper', {
         spaceBetween: 30,
-        slidesPerView: 4,
+        slidesPerView: 1,
         direction: 'horizontal',
-        slidesPerGroup: 4,
+        slidesPerGroup: 1,
         loop: true,
         pagination: {
           el: '.swiper-pagination',
@@ -169,6 +169,24 @@
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            slidesPerGroup: 2
+          },
+          480: {
+            slidesPerView: 3,
+            slidesPerGroup: 3
+          },
+          780: {
+            slidesPerView: 4,
+            sliderPerGroup: 4
+          },
+          900: {
+            slidesPerView: 5,
+            slidesPerGroup: 5
+          }
+        }
       });
     </script>
   </body>
