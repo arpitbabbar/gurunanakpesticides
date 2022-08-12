@@ -11,6 +11,14 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link 
+      href="style.css" 
+      rel="stylesheet"
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -75,7 +83,85 @@
       </div>
     </section>
     <section>
-      Sec -2 (Products)
+      <div class="swiper">
+        <div class="swiper-wrapper content">
+          <div class="swiper-slide card">
+            <div class="image">
+              <img class="card-img-top" src="tozobuds.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card 1</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="image">
+              <img class="card-img-top" src="tozobuds.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="image">
+              <img class="card-img-top" src="tozobuds.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="image">
+              <img class="card-img-top" src="tozobuds.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="image">
+              <img class="card-img-top" src="tozobuds.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="image">
+              <img class="card-img-top" src="tozobuds.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image">
+              <img class="card-img-top" src="tozobuds.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="image">
+              <img class="card-img-top" src="tozobuds.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </section>
     <section>
       Sec - 3 (Companies - dealers)
@@ -89,5 +175,41 @@
     <footer>
       This is a footer
     </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"
+    ></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        spaceBetween: 30,
+        slidesPerView: 1,
+        direction: 'horizontal',
+        slidesPerGroup: 1,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            slidesPerGroup: 2
+          },
+          480: {
+            slidesPerView: 3,
+            slidesPerGroup: 3
+          },
+          780: {
+            slidesPerView: 4,
+            sliderPerGroup: 4
+          },
+          900: {
+            slidesPerView: 5,
+            slidesPerGroup: 5
+          }
+        }
+      });
+    </script>
   </body>
 </html>
